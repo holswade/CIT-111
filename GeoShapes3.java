@@ -31,8 +31,22 @@ public class GeoShapes3 {
 
         double returnedCylVolume = calcVolumeOfCylinder(userRadius,userHeight );
         System.out.println(" The volume of a cylinder with radius: " + userRadius+
-                "nand height of " + userHeight + " is " + returnedCylVolume);
+                " and height of " + userHeight + " is " + returnedCylVolume);
         System.out.println("-------------------------------------------------------");
+    
+        
+        System.out.println("Enter the sphere radius: ");
+        double usRadius = userInputScanner.nextDouble();
+
+        double returnedSphVolume = calcVolumeOfSphere(usRadius);
+        System.out.println("The volume of sphere with radius: " + usRadius+" is "+ returnedSphVolume);
+        
+   
+        
+    
+    
+    
+    
     }//close main method
 
     public static double calcVolumeOfCube(double SideLength) {
@@ -46,5 +60,12 @@ public class GeoShapes3 {
         final double PI = 3.14;
         double cyVol = PI * (radius * radius) * height;
         return cyVol;
-    }//close method   
+   }
+    public static double calcVolumeOfSphere (double radius) {
+       final double PI = 3.14;
+        double  sphereVolume = Math.pow (radius, 3)* PI *4/3 ;
+               
+    return sphereVolume;
+        
+   }//close method
 }// close main method
