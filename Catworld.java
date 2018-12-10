@@ -14,10 +14,13 @@ public class Catworld {
     Cat tabby = new Cat();
     tabby.age = 1;
     tabby.size ="Tabby, very small";
+    Cat.displayTabby();
+    
     
     displayCatStats(tabby);
+    
     tabby.giveCatFood();
-    tabby.
+    tabby.dontGiveCatFood
     }
    
 }

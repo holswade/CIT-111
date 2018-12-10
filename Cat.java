@@ -20,6 +20,24 @@ public class Cat {
     private double height;
     private double jump;
     
+    public static void displayTabby(){
+        System.out.println("..^,,,,,,.^.");
+        System.out.println(".(= 'o'=  )");
+        System.out.println(".(''),,('')");
+        System.out.println("'","\\'");
+        System.out.println(".| ,,,,.,, |");
+        System.out.println(".|,,,,,.,, |");        
+        System.out.println(".(,,)|" + "|(,,)");
+        System.out.println("/,/"    );
+        System.out.println(". .. ((...");
+        System.out.println(". . . ))..");
+        System.out.println(". . . ((..");
+        System.out.println(". . .  @..");
+    }
+    
+    
+    
+    
     public void giveCatFood(){
         isCatFed = true;
         System.out.println("Meow...meowwwwwww.... m e o w!<3<3<3 ");
@@ -40,6 +58,6 @@ public class Cat {
     }
     public double jump(int maxHeight){
     jump = jump + maxHeight; 
-    }
+    } 
 
 }
